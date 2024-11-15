@@ -11,7 +11,18 @@ const RadixSummary = () => {
       description: "Protect assets, network integrity, preventing hacks and exploits."
     },
     {
-      title: "Scalable (linearly)",
+      title: (
+        <>
+          Scalable (<a
+            href="https://x.com/konstantinkoos/status/1856977069223145671"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-emerald-300 hover:text-emerald-400 transition-colors"
+          >
+            <ins>linearly</ins>👈
+          </a>)
+        </>
+      ),
       description: "Sharded protocol WITHOUT any parachain / coordinator / Layer 2"
     },
     {
