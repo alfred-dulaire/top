@@ -134,7 +134,7 @@ export function TechFundamentals() {
               </a>)
             </h3>
             <p className="text-white text-shadow mb-4 text-justify text-balance">
-              For billions of users seamlessly, you NEED a sharded protocol WITHOUT any beacon chain / para chain / coordinator / synchronisator / terminator or Layer 2, that delivers unlimited TPS capacity.
+              For billions of users seamlessly, you NEED a sharded protocol WITHOUT any beacon chain / para chain / coordinator / synchronisator / terminator or Layer 2, to deliver unlimited TPS capacity.
             </p>
             <div className="overflow-x-auto">
               <table className="w-full text-white">
