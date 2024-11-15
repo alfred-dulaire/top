@@ -95,18 +95,18 @@ const pdfActions = [
   },
   {
     icon: <Share2 className="w-5 h-5" />,
-    text: "Share as PDF",
+    text: "Share PDF link",
     onClick: () => {
       const pdfUrl = 'https://drive.google.com/uc?export=download&id=1qTvaDgTCxov_vQ0-Cx6dAYEqMMQSFYrR';
-      const subject = encodeURIComponent('Radix DLT Pitch Deck');
+      const subject = encodeURIComponent('Radix community Pitch Deck');
       const body = encodeURIComponent(
-        `Please find the Radix DLT pitch deck available for download here: ${pdfUrl}`
+        `Please find the Radix community pitch deck available for download here: ${pdfUrl}`
       );
 
       if (navigator.share) {
         navigator.share({
-          title: 'Radix_community_Deck',
-          text: `Check this Radix community made pitch deck please : ${pdfUrl}`,
+          title: 'Radix community pitch deck',
+          text: `Check this Radix community made pitch deck from Radix.top please : ${pdfUrl}`,
           url: pdfUrl
         }).catch(() => {
           window.location.href = `mailto:?subject=${subject}&body=${body}`;
