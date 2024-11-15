@@ -104,7 +104,7 @@ export function Contact() {
           <div className="backdrop-blur-lg bg-gray-500/30 p-4 sm:p-8 rounded-xl border border-white/30">
              <div className="space-y-6 sm:space-y-8">
               <div>
-                <h4 className="text-base sm:text-lg font-semibold text-white mb-4">RADIX for Institutions and Fund Managers</h4>
+                <h4 className="text-base sm:text-lg font-semibold text-white mb-4">RADIX XRD ticker for Institutions and Fund Managers</h4>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
                   {tradingPartners.institutional.map((partner) => (
                     <a
