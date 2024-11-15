@@ -125,14 +125,14 @@ export function MarketNarratives() {
               <img 
                 src="https://i.ibb.co/JK6VbD9/pep.png" 
                 alt="Pep Guardiola - The Fundamentals"
-                className="w-full h-full object-contain rounded-xl"
+                className="w-full h-auto rounded-xl"
               />
             </div>
             <div className="backdrop-blur-lg bg-gray-500/30 p-4 rounded-xl border border-white/30 aspect-[4/3] flex items-center justify-center">
               <img 
                 src="https://i.ibb.co/ZLWQ9dn/jurgen.png" 
                 alt="Jurgen Klopp - The Basics"
-                className="w-full h-full object-contain rounded-xl"
+                className="w-full h-auto rounded-xl"
               />
             </div>
           </div>
