@@ -123,7 +123,7 @@ export function MarketNarratives() {
           <div className="grid md:grid-cols-2 gap-8">
             <div className="backdrop-blur-lg bg-gray-500/30 p-4 rounded-xl border border-white/30 aspect-[4/3] flex items-center justify-center">
               <img 
-                src="https://i.ibb.co/LhYDPrS/pep.png" 
+                src="https://i.ibb.co/JK6VbD9/pep.png" 
                 alt="Pep Guardiola - The Fundamentals"
                 className="w-full h-full object-contain rounded-xl"
               />
