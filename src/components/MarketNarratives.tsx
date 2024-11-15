@@ -25,7 +25,7 @@ const narratives = [
     title: "WHAT ELSE ?",
     questions: [
       {
-        text: "Something that revolutionize finance, data management, and digital ownership with innovation and security at its core? To embrace the whole world economy?",
+        text: "Something that revolutionises finance, data management, and digital ownership with innovation and security at its core? To embrace the whole world economy?",
         className: "text-base text-justify text-balance"
       },
       {
