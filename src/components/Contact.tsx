@@ -95,7 +95,7 @@ const pdfActions = [
   },
   {
     icon: <Share2 className="w-5 h-5" />,
-    text: "Share PDF link",
+    text: "Share PDF",
     onClick: () => {
       const pdfUrl = 'https://drive.google.com/uc?export=download&id=1qTvaDgTCxov_vQ0-Cx6dAYEqMMQSFYrR';
       const subject = encodeURIComponent('Radix community Pitch Deck');
