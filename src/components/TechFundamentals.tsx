@@ -83,14 +83,14 @@ export function TechFundamentals() {
         </div>
 
         <div className="max-w-4xl mx-auto space-y-8">
-          <div className="backdrop-blur-lg bg-white/10 p-6 rounded-xl border border-white/20">
+          <div className="backdrop-blur-lg bg-gray-500/30 p-6 rounded-xl border border-white/30">
             <h3 className="text-xl font-bold text-white mb-2 text-shadow">Decentralisation</h3>
             <p className="text-white text-shadow">
               REMOVE centralised L1 like Aptos, Klaytn, Ronin, Binance Blockchain, Internet Computer, Flow, Near Protocol, Oasis, Oasys and others for true decentralization
             </p>
           </div>
 
-          <div className="backdrop-blur-lg bg-white/10 p-6 rounded-xl border border-white/20">
+          <div className="backdrop-blur-lg bg-gray-500/30 p-6 rounded-xl border border-white/30">
             <h3 className="text-xl font-bold text-white mb-2 text-shadow">Security</h3>
             <p className="text-white text-shadow">
               <a
@@ -111,7 +111,7 @@ export function TechFundamentals() {
             </p>
           </div>
 
-          <div className="backdrop-blur-lg bg-white/10 p-6 rounded-xl border border-white/20">
+          <div className="backdrop-blur-lg bg-gray-500/30 p-6 rounded-xl border border-white/30">
             <h3 className="text-xl font-bold text-white mb-2 text-shadow">
               Scalability (<a
                 href="https://x.com/konstantinkoos/status/1856977069223145671"
@@ -159,7 +159,7 @@ export function TechFundamentals() {
             </div>
           </div>
 
-          <div className="backdrop-blur-lg bg-white/10 p-6 rounded-xl border border-white/20">
+          <div className="backdrop-blur-lg bg-gray-500/30 p-6 rounded-xl border border-white/30">
             <h3 className="text-xl font-bold text-white mb-2 text-shadow">User-Friendly framework</h3>
             <p className="text-white text-shadow">
               <a
@@ -180,7 +180,7 @@ export function TechFundamentals() {
             </p>
           </div>
 
-          <div className="backdrop-blur-lg bg-white/10 p-6 rounded-xl border border-white/20">
+          <div className="backdrop-blur-lg bg-gray-500/30 p-6 rounded-xl border border-white/30">
             <h3 className="text-xl font-bold text-white mb-2 text-shadow">Regulatory compliance</h3>
             <p className="text-white text-shadow">
               <a 
@@ -194,7 +194,7 @@ export function TechFundamentals() {
             </p>
           </div>
 
-          <div className="backdrop-blur-lg bg-white/10 p-6 rounded-xl border border-white/20">
+          <div className="backdrop-blur-lg bg-gray-500/30 p-6 rounded-xl border border-white/30">
             <RadixSummary />
           </div>
         </div>
