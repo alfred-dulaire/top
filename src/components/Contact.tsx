@@ -106,7 +106,7 @@ const pdfActions = [
       if (navigator.share) {
         navigator.share({
           title: 'Radix_community_Deck',
-          text: `Check this Radix community made pitch deck please. You can download it here: ${pdfUrl}`,
+          text: `Check this Radix community made pitch deck please : ${pdfUrl}`,
           url: pdfUrl
         }).catch(() => {
           window.location.href = `mailto:?subject=${subject}&body=${body}`;
