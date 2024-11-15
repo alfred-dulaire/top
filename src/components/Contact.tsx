@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowUpRight, MessageCircle, Mail, Video, Gift, Mic, Globe, Users } from 'lucide-react';
+import { ArrowUpRight, MessageCircle, Mail, Video, Gift, Mic, Globe, Users, FileText, Share2 } from 'lucide-react';
 
 const tradingPartners = {
   institutional: [
@@ -52,7 +52,7 @@ const communityLinks = [
   {
     icon: <Mail className="w-5 h-5" />,
     text: "Email",
-    href: "mailto:hello@radixdlt.com?subject=Community com&bcc=rb09@cpc.cx"
+    href: "mailto:hello@radixdlt.com"
   },
   {
     icon: <MessageCircle className="w-5 h-5" />,
@@ -85,39 +85,75 @@ const communityLinks = [
   }
 ];
 
+const pdfActions = [
+  {
+    icon: <FileText className="w-5 h-5" />,
+    text: "Download PDF",
+    onClick: () => {
+      window.location.href = '/Radix DLT 6 slides pitch v2.pdf';
+    }
+  },
+  {
+    icon: <Share2 className="w-5 h-5" />,
+    text: "Share PDF",
+    onClick: () => {
+      const pdfUrl = '/Radix DLT 6 slides pitch v2.pdf';
+      fetch(pdfUrl)
+        .then(response => response.blob())
+        .then(blob => {
+          const file = new File([blob], 'Radix DLT 6 slides pitch v2.pdf', { type: 'application/pdf' });
+          const subject = encodeURIComponent('Radix DLT Pitch Deck');
+          const body = encodeURIComponent('Please find attached the Radix DLT pitch deck.');
+          
+          if (navigator.share && navigator.canShare({ files: [file] })) {
+            navigator.share({
+              files: [file],
+              title: 'Radix DLT Pitch Deck',
+              text: 'Please find attached the Radix DLT pitch deck.'
+            }).catch(() => {
+              window.location.href = `mailto:?subject=${subject}&body=${body}`;
+            });
+          } else {
+            window.location.href = `mailto:?subject=${subject}&body=${body}`;
+          }
+        });
+    }
+  }
+];
+
 export function Contact() {
   return (
     <section id="contact" className="gradient-section min-h-screen flex items-center">
-      <div className="container mx-auto px-4 py-12 sm:py-20">
-        <div className="max-w-4xl mx-auto text-center space-y-8 sm:space-y-12">
+      <div className="container mx-auto px-4 py-20">
+        <div className="max-w-4xl mx-auto text-center space-y-12">
           <div>
-            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold">
+            <h2 className="text-6xl font-bold">
               <span className="text-white">Thank you for your </span>
               <span className="text-emerald-300">attention!</span>
             </h2>
-            <div className="mt-4 flex flex-col sm:flex-row items-center justify-center gap-2">
-              <p className="text-lg sm:text-xl text-white">Any questions?</p>
-              <p className="text-lg sm:text-xl text-emerald-300">Check those links</p>
+            <div className="mt-4 flex items-center justify-center gap-2">
+              <p className="text-xl text-white">Any questions?</p>
+              <p className="text-xl text-emerald-300">Check those links</p>
             </div>
           </div>
 
-          <div className="backdrop-blur-lg bg-gray-500/30 p-4 sm:p-8 rounded-xl border border-white/30">
-             <div className="space-y-6 sm:space-y-8">
+          <div className="backdrop-blur-lg bg-white/10 p-8 rounded-xl border border-white/20">
+            <div className="space-y-8">
               <div>
-                <h4 className="text-base sm:text-lg font-semibold text-white mb-4">RADIX XRD ticker for Institutions and Fund Managers</h4>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+                <h4 className="text-lg font-semibold text-white mb-4">RADIX XRD ticker for Institutions and Fund Managers</h4>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                   {tradingPartners.institutional.map((partner) => (
                     <a
                       key={partner.name}
                       href={partner.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center justify-center p-3 sm:p-4 backdrop-blur-sm bg-white/5 rounded-lg hover:bg-gray-500/30 transition-colors group"
+                      className="flex items-center justify-center p-4 backdrop-blur-sm bg-white/5 rounded-lg hover:bg-white/10 transition-colors group"
                     >
                       <img
                         src={partner.logo}
                         alt={partner.name}
-                        className="h-6 sm:h-8 object-contain filter brightness-0 invert opacity-80 group-hover:opacity-100 transition-opacity"
+                        className="h-8 object-contain filter brightness-0 invert opacity-80 group-hover:opacity-100 transition-opacity"
                       />
                     </a>
                   ))}
@@ -125,20 +161,20 @@ export function Contact() {
               </div>
               
               <div>
-                <h4 className="text-base sm:text-lg font-semibold text-white mb-4">For Classic Retailers</h4>
-                <div className="grid grid-cols-2 gap-4 sm:gap-6">
+                <h4 className="text-lg font-semibold text-white mb-4">For Classic Retailers</h4>
+                <div className="grid grid-cols-2 gap-6">
                   {tradingPartners.retail.map((partner) => (
                     <a
                       key={partner.name}
                       href={partner.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center justify-center p-3 sm:p-4 backdrop-blur-sm bg-white/5 rounded-lg hover:bg-gray-500/30 transition-colors group"
+                      className="flex items-center justify-center p-4 backdrop-blur-sm bg-white/5 rounded-lg hover:bg-white/10 transition-colors group"
                     >
                       <img
                         src={partner.logo}
                         alt={partner.name}
-                        className="h-6 sm:h-8 object-contain filter brightness-0 invert opacity-80 group-hover:opacity-100 transition-opacity"
+                        className="h-8 object-contain filter brightness-0 invert opacity-80 group-hover:opacity-100 transition-opacity"
                       />
                     </a>
                   ))}
@@ -147,19 +183,31 @@ export function Contact() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {communityLinks.map((link, index) => (
-              <a
+              <button
                 key={index}
-                href={link.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 backdrop-blur-lg bg-gray-500/30 p-3 sm:p-4 rounded-xl border border-white/30 hover:bg-white/20 transition-colors text-white group"
+                onClick={() => window.open(link.href, '_blank')}
+                className="flex items-center justify-center gap-2 backdrop-blur-lg bg-white/10 p-4 rounded-xl border border-white/20 hover:bg-white/20 transition-colors text-white group"
               >
                 {link.icon}
-                <span className="text-sm sm:text-base">{link.text}</span>
+                <span>{link.text}</span>
                 <ArrowUpRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
-              </a>
+              </button>
+            ))}
+          </div>
+
+          <div id="pdf-actions" className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {pdfActions.map((action, index) => (
+              <button
+                key={index}
+                onClick={action.onClick}
+                className="flex items-center justify-center gap-2 backdrop-blur-lg bg-white/10 p-4 rounded-xl border border-white/20 hover:bg-white/20 transition-colors text-white group"
+              >
+                {action.icon}
+                <span>{action.text}</span>
+                <ArrowUpRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
+              </button>
             ))}
           </div>
         </div>
