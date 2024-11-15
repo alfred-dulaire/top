@@ -26,15 +26,15 @@ const narratives = [
     questions: [
       {
         text: "Something that revolutionize finance, data management, and digital ownership with innovation and security at its core? To embrace the whole world economy?",
-        className: "text-base"
+        className: "text-base text-justify line-clamp-3 hover:line-clamp-none transition-all duration-300"
       },
       {
         text: "The CERTAIN next big thing?",
-        className: "text-xl font-bold mt-4 text-emerald-300"
+        className: "text-xl font-bold mt-4 text-emerald-300 text-center"
       },
       {
         text: "And HOW do you find it?",
-        className: "text-xl font-bold mt-2 text-emerald-300"
+        className: "text-xl font-bold mt-2 text-emerald-300 text-center"
       }
     ]
   }
