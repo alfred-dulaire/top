@@ -6,7 +6,8 @@ const navItems = [
   { label: 'Narratives', href: '#narratives' },
   { label: 'Fundamentals', href: '#fundamentals' },
   { label: 'Opportunity', href: '#opportunity' },
-  { label: 'Thanks', href: '#contact' }
+  { label: 'Thanks', href: '#contact' },
+  { label: '.pdf', href: '#pdf-actions' }
 ];
 
 export function Header() {
@@ -43,7 +44,7 @@ export function Header() {
               <li key={item.href}>
                 <button
                   onClick={() => handleNavClick(item.href)}
-                  className="text-white/80 hover:text-white text-shadow text-sm font-medium transition-colors"
+                  className="text-white/80 hover:text-white text-shadow text-sm font-medium transition-colors flex items-center gap-1"
                 >
                   {item.label}
                 </button>
@@ -60,7 +61,7 @@ export function Header() {
                 <li key={item.href}>
                   <button
                     onClick={() => handleNavClick(item.href)}
-                    className="text-white/80 hover:text-white text-shadow text-base font-medium transition-colors w-full text-left"
+                    className="text-white/80 hover:text-white text-shadow text-base font-medium transition-colors w-full text-left flex items-center gap-1"
                   >
                     {item.label}
                   </button>
