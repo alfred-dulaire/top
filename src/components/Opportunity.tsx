@@ -22,9 +22,7 @@ export function Opportunity() {
           }
         });
       },
-      {
-        threshold: 0.2
-      }
+      { threshold: 0.2 }
     );
 
     if (sectionRef.current) {
@@ -41,15 +39,52 @@ export function Opportunity() {
   return (
     <section id="opportunity" className="gradient-section" ref={sectionRef}>
       <div className="container mx-auto px-4 py-20">
-        <h2 className="text-2xl sm:text-3xl font-bold text-white text-center mb-8 sm:mb-12 text-shadow">
+        <h2 className="text-3xl font-bold text-white text-center mb-12 text-shadow">
           THE OPPORTUNITY IS HERE !
           <br />
           WILL YOU BE THE FIRST TO CATCH IT ?
         </h2>
-        <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-stretch gap-8">
+
+        {/* Mobile Layout */}
+        <div className="md:hidden flex flex-col gap-8">
+          <div className="flex flex-col gap-8">
+            <img
+              src="https://i.ibb.co/3mSYD5D/SUI.png"
+              alt="SUI Logo"
+              className="w-full h-auto rounded-xl"
+            />
+            <img
+              src="https://i.ibb.co/rKBtBRW/XRD.png"
+              alt="Radix Logo"
+              className="w-full h-auto rounded-xl"
+            />
+          </div>
+
+          <div className="backdrop-blur-lg bg-gray-500/30 p-8 rounded-xl border border-white/30">
+            <div className="space-y-6">
+              <p className="text-lg text-white text-shadow text-justify">
+                Radix is supported by GIGABRAINS, with classic retailers memecoin hunters still to come. Reaching SUI MC is a <span className="font-bold text-emerald-300">x50</span>!
+              </p>
+              <p className="text-lg text-white text-shadow text-justify">
+                With all the right fundamentals, Radix can embrace the <span className="font-bold text-emerald-300">400 Trillions $</span> global finance and its millions transactions per seconds.
+              </p>
+            </div>
+          </div>
+
+          <div className="backdrop-blur-lg bg-gray-500/30 p-4 rounded-xl border border-white/30">
+            <img
+              src="https://i.ibb.co/vHwHNw7/graph2.png"
+              alt="Growth Graph"
+              className="w-full h-auto rounded-lg"
+            />
+          </div>
+        </div>
+
+        {/* Desktop Layout */}
+        <div className="hidden md:flex max-w-5xl mx-auto items-stretch gap-8">
           <div 
             ref={suiRef}
-            className="w-full md:w-64 flex-shrink-0 hidden md:flex items-center opacity-0 transform -translate-x-full transition-all duration-[2000ms]"
+            className="w-64 flex-shrink-0 flex items-center opacity-0 transform -translate-x-full transition-all duration-[2000ms]"
           >
             <img
               src="https://i.ibb.co/3mSYD5D/SUI.png"
@@ -58,13 +93,13 @@ export function Opportunity() {
             />
           </div>
           
-          <div className="flex-1 flex flex-col gap-4 sm:gap-8">
-            <div className="backdrop-blur-lg bg-gray-500/30 p-4 sm:p-8 rounded-xl border border-white/30">
-              <div className="space-y-4 sm:space-y-6">
-                <p className="text-base sm:text-lg text-white text-shadow text-justify">
+          <div className="flex-1 flex flex-col">
+            <div className="backdrop-blur-lg bg-gray-500/30 p-8 rounded-xl border border-white/30 mb-8">
+              <div className="space-y-6">
+                <p className="text-lg text-white text-shadow text-justify">
                   Radix is supported by GIGABRAINS, with classic retailers memecoin hunters still to come. Reaching SUI MC is a <span className="font-bold text-emerald-300">x50</span>!
                 </p>
-                <p className="text-base sm:text-lg text-white text-shadow text-justify">
+                <p className="text-lg text-white text-shadow text-justify">
                   With all the right fundamentals, Radix can embrace the <span className="font-bold text-emerald-300">400 Trillions $</span> global finance and its millions transactions per seconds.
                 </p>
               </div>
@@ -81,7 +116,7 @@ export function Opportunity() {
           
           <div 
             ref={xrdRef}
-            className="w-full md:w-64 flex-shrink-0 hidden md:flex items-center opacity-0 transform translate-x-full transition-all duration-[2000ms]"
+            className="w-64 flex-shrink-0 flex items-center opacity-0 transform translate-x-full transition-all duration-[2000ms]"
           >
             <img
               src="https://i.ibb.co/rKBtBRW/XRD.png"
