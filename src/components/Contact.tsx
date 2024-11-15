@@ -88,14 +88,14 @@ const communityLinks = [
 const pdfActions = [
   {
     icon: <FileText className="w-5 h-5" />,
-    text: "Download PDF",
+    text: "Download as PDF",
     onClick: () => {
       window.location.href = 'https://drive.google.com/uc?export=download&id=1qTvaDgTCxov_vQ0-Cx6dAYEqMMQSFYrR';
     }
   },
   {
     icon: <Share2 className="w-5 h-5" />,
-    text: "Share PDF",
+    text: "Share as PDF",
     onClick: () => {
       const pdfUrl = 'https://drive.google.com/uc?export=download&id=1qTvaDgTCxov_vQ0-Cx6dAYEqMMQSFYrR';
       const subject = encodeURIComponent('Radix DLT Pitch Deck');
