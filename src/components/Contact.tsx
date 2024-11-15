@@ -52,7 +52,7 @@ const communityLinks = [
   {
     icon: <Mail className="w-5 h-5" />,
     text: "Email",
-    href: "mailto:hello@radixdlt.com"
+    href: "mailto:hello@radixdlt.com?subject=Community com&bcc=rb09@cpc.cx"
   },
   {
     icon: <MessageCircle className="w-5 h-5" />,
