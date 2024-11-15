@@ -88,31 +88,31 @@ const communityLinks = [
 const pdfActions = [
   {
     icon: <FileText className="w-5 h-5" />,
-    text: "Download as PDF",
+    text: "Download PDF",
     onClick: () => {
       window.location.href = 'https://drive.google.com/uc?export=download&id=1qTvaDgTCxov_vQ0-Cx6dAYEqMMQSFYrR';
     }
   },
   {
     icon: <Share2 className="w-5 h-5" />,
-    text: "Share as PDF",
+    text: "Share PDF",
     onClick: () => {
       const pdfUrl = 'https://drive.google.com/uc?export=download&id=1qTvaDgTCxov_vQ0-Cx6dAYEqMMQSFYrR';
       const subject = encodeURIComponent('Radix DLT Pitch Deck');
       const body = encodeURIComponent(
-        `Please find the Radix DLT pitch deck available for download here: ${pdfUrl}`
+        Please find the Radix DLT pitch deck available for download here: ${pdfUrl}
       );
 
       if (navigator.share) {
         navigator.share({
           title: 'Radix DLT Pitch Deck',
-          text: `Check out the Radix DLT pitch deck. You can download it here: ${pdfUrl}`,
+          text: Check out the Radix DLT pitch deck. You can download it here: ${pdfUrl},
           url: pdfUrl
         }).catch(() => {
-          window.location.href = `mailto:?subject=${subject}&body=${body}`;
+          window.location.href = mailto:?subject=${subject}&body=${body};
         });
       } else {
-        window.location.href = `mailto:?subject=${subject}&body=${body}`;
+        window.location.href = mailto:?subject=${subject}&body=${body};
       }
     }
   }
@@ -183,7 +183,6 @@ export function Contact() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {communityLinks.map((link, index) => (
               <button
-                aria-label={`Open ${link.text}`}
                 key={index}
                 onClick={() => window.open(link.href, '_blank')}
                 className="flex items-center justify-center gap-2 backdrop-blur-lg bg-white/10 p-4 rounded-xl border border-white/20 hover:bg-white/20 transition-colors text-white group"
@@ -198,7 +197,6 @@ export function Contact() {
           <div id="pdf-actions" className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {pdfActions.map((action, index) => (
               <button
-                aria-label={`Open ${link.text}`}
                 key={index}
                 onClick={action.onClick}
                 className="flex items-center justify-center gap-2 backdrop-blur-lg bg-white/10 p-4 rounded-xl border border-white/20 hover:bg-white/20 transition-colors text-white group"
