@@ -52,7 +52,7 @@ const RadixSummary = () => {
             <div key={index} className="flex items-start gap-2">
               <div className="flex-1">
                 <h4 className="text-white font-semibold mb-1">{feature.title}</h4>
-                <p className="text-emerald-300 text-sm text-justify">{feature.description}</p>
+                <p className="text-emerald-300 text-sm text-justify line-clamp-3 hover:line-clamp-none transition-all duration-300">{feature.description}</p>
               </div>
               <img
                 src="https://cdn.prod.website-files.com/6053f7fca5bf627283b582c2/6266da247313af0ecee3baa9_Radix-Icon-64x64.png"
@@ -96,14 +96,14 @@ export function TechFundamentals() {
         <div className="max-w-4xl mx-auto space-y-8">
           <div className="backdrop-blur-lg bg-gray-500/30 p-6 rounded-xl border border-white/30">
             <h3 className="text-xl font-bold text-white mb-2 text-shadow">Decentralisation</h3>
-            <p className="text-white text-shadow text-justify">
+            <p className="text-white text-shadow text-justify line-clamp-3 hover:line-clamp-none transition-all duration-300">
               REMOVE centralised L1 like Aptos, Klaytn, Ronin, Binance Blockchain, Internet Computer, Flow, Near Protocol, Oasis, Oasys and others for true decentralization
             </p>
           </div>
 
           <div className="backdrop-blur-lg bg-gray-500/30 p-6 rounded-xl border border-white/30">
             <h3 className="text-xl font-bold text-white mb-2 text-shadow">Security</h3>
-            <p className="text-white text-shadow text-justify">
+            <p className="text-white text-shadow text-justify line-clamp-3 hover:line-clamp-none transition-all duration-300">
               <a
                 href="https://www.radixdlt.com/blog/comparing-virtual-machines-message-only-vs-asset-oriented"
                 target="_blank"
@@ -133,7 +133,7 @@ export function TechFundamentals() {
                 <ins>linear</ins>👈
               </a>)
             </h3>
-            <p className="text-white text-shadow mb-4 text-justify">
+            <p className="text-white text-shadow mb-4 text-justify line-clamp-3 hover:line-clamp-none transition-all duration-300">
               For billions of users seamlessly, you NEED a sharded protocol WITHOUT any beacon chain / para chain / coordinator / synchronisator / terminator or Layer 2, that delivers unlimited TPS capacity.
             </p>
             <div className="overflow-x-auto">
@@ -172,7 +172,7 @@ export function TechFundamentals() {
 
           <div className="backdrop-blur-lg bg-gray-500/30 p-6 rounded-xl border border-white/30">
             <h3 className="text-xl font-bold text-white mb-2 text-shadow">User-Friendly framework</h3>
-            <p className="text-white text-shadow text-justify">
+            <p className="text-white text-shadow text-justify line-clamp-3 hover:line-clamp-none transition-all duration-300">
               <a
                 href="https://www.radixdlt.com/blog/scrypto-an-asset-oriented-smart-contract-language"
                 target="_blank"
@@ -193,7 +193,7 @@ export function TechFundamentals() {
 
           <div className="backdrop-blur-lg bg-gray-500/30 p-6 rounded-xl border border-white/30">
             <h3 className="text-xl font-bold text-white mb-2 text-shadow">Regulatory compliance</h3>
-            <p className="text-white text-shadow text-justify">
+            <p className="text-white text-shadow text-justify line-clamp-3 hover:line-clamp-none transition-all duration-300">
               <a 
                 href="https://youtube.com/watch?v=IoJj2-bOPu4" 
                 target="_blank" 
