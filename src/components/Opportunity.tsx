@@ -62,10 +62,10 @@ export function Opportunity() {
 
           <div className="backdrop-blur-lg bg-gray-500/30 p-8 rounded-xl border border-white/30">
             <div className="space-y-6">
-              <p className="text-lg text-white text-shadow text-justify">
+              <p className="text-lg text-white text-shadow text-justify line-clamp-3 hover:line-clamp-none transition-all duration-300">
                 Radix is supported by GIGABRAINS, with classic retailers memecoin hunters still to come. Reaching SUI MC is a <span className="font-bold text-emerald-300">x50</span>!
               </p>
-              <p className="text-lg text-white text-shadow text-justify">
+              <p className="text-lg text-white text-shadow text-justify line-clamp-3 hover:line-clamp-none transition-all duration-300">
                 With all the right fundamentals, Radix can embrace the <span className="font-bold text-emerald-300">400 Trillions $</span> global finance and its millions transactions per seconds.
               </p>
             </div>
@@ -96,10 +96,10 @@ export function Opportunity() {
           <div className="flex-1 flex flex-col">
             <div className="backdrop-blur-lg bg-gray-500/30 p-8 rounded-xl border border-white/30 mb-8">
               <div className="space-y-6">
-                <p className="text-lg text-white text-shadow text-justify">
+                <p className="text-lg text-white text-shadow text-justify line-clamp-3 hover:line-clamp-none transition-all duration-300">
                   Radix is supported by GIGABRAINS, with classic retailers memecoin hunters still to come. Reaching SUI MC is a <span className="font-bold text-emerald-300">x50</span>!
                 </p>
-                <p className="text-lg text-white text-shadow text-justify">
+                <p className="text-lg text-white text-shadow text-justify line-clamp-3 hover:line-clamp-none transition-all duration-300">
                   With all the right fundamentals, Radix can embrace the <span className="font-bold text-emerald-300">400 Trillions $</span> global finance and its millions transactions per seconds.
                 </p>
               </div>
