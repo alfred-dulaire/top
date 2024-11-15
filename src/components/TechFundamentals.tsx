@@ -130,29 +130,29 @@ export function TechFundamentals() {
                 <thead>
                   <tr className="text-center">
                     <th className="p-2"></th>
-                    <th className="p-2">Aptos</th>
-                    <th className="p-2">Cardano</th>
-                    <th className="p-2">MultiversX</th>
-                    <th className="p-2"><strong>Radix</strong></th>
                     <th className="p-2"><strong>Sui</strong></th>
+                    <th className="p-2"><strong>Radix</strong></th>
+                    <th className="p-2">MultiversX</th>
+                    <th className="p-2">Cardano</th>
+                    <th className="p-2">Aptos</th>
                   </tr>
                 </thead>
                 <tbody className="text-center">
                   <tr>
                     <td className="p-2">Sharded</td>
+                    <td className="p-2">✅</td>
+                    <td className="p-2">✅</td>
+                    <td className="p-2">✅</td>
                     <td className="p-2">❌</td>
                     <td className="p-2">❌</td>
-                    <td className="p-2">✅</td>
-                    <td className="p-2">✅</td>
-                    <td className="p-2">✅</td>
                   </tr>
                   <tr>
                     <td className="p-2">WITHOUT *coordinator*</td>
-                    <td className="p-2">❌</td>
-                    <td className="p-2">❌</td>
-                    <td className="p-2">❌</td>
                     <td className="p-2">✅</td>
                     <td className="p-2">✅</td>
+                    <td className="p-2">❌</td>
+                    <td className="p-2">❌</td>
+                    <td className="p-2">❌</td>
                   </tr>
                 </tbody>
               </table>
