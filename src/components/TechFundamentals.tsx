@@ -29,8 +29,8 @@ const RadixSummary = () => {
   ];
 
   return (
-    <div className="flex items-start gap-8">
-      <div className="flex-1">
+    <div className="flex flex-col md:flex-row items-start gap-8">
+      <div className="backdrop-blur-lg bg-gray-400/20 p-6 rounded-xl border border-white/30 w-full md:w-[calc(100%-12rem)]">
         <img
           src="https://cdn.prod.website-files.com/6053f7fca5bf627283b582c2/6266da2a5acb38c8eacf5938_radix_logo_white.png"
           alt="Radix Logo"
@@ -52,7 +52,7 @@ const RadixSummary = () => {
           ))}
         </div>
       </div>
-      <div className="flex-shrink-0 self-end" style={{ width: '192px' }}>
+      <div className="md:w-48 w-full flex-shrink-0 md:self-center">
         <img
           src="https://i.ibb.co/Xkv8rgS/Picture1.png"
           alt="Wallet Screenshot"
