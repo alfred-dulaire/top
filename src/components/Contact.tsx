@@ -88,14 +88,14 @@ const communityLinks = [
 const pdfActions = [
   {
     icon: <FileText className="w-5 h-5" />,
-    text: "Download PDF",
+    text: "Download as PDF",
     onClick: () => {
       window.location.href = 'https://drive.google.com/uc?export=download&id=1qTvaDgTCxov_vQ0-Cx6dAYEqMMQSFYrR';
     }
   },
   {
     icon: <Share2 className="w-5 h-5" />,
-    text: "Share PDF",
+    text: "Share as PDF",
     onClick: () => {
       const pdfUrl = 'https://drive.google.com/uc?export=download&id=1qTvaDgTCxov_vQ0-Cx6dAYEqMMQSFYrR';
       const subject = encodeURIComponent('Radix DLT Pitch Deck');
@@ -105,8 +105,8 @@ const pdfActions = [
 
       if (navigator.share) {
         navigator.share({
-          title: 'Radix DLT Pitch Deck',
-          text: `Check out the Radix DLT pitch deck. You can download it here: ${pdfUrl}`,
+          title: 'Radix_community_Deck',
+          text: `Check this Radix community made pitch deck please. You can download it here: ${pdfUrl}`,
           url: pdfUrl
         }).catch(() => {
           window.location.href = `mailto:?subject=${subject}&body=${body}`;
