@@ -35,7 +35,7 @@ const RadixSummary = () => {
     },
     {
       title: "BONUS: Readable UX for normies",
-      description: "What is displayed in your wallet's transaction manifest is what happens"
+      description: "What is displayed in your wallet's transaction manifest is what happens!"
     }
   ];
 
