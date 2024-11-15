@@ -59,7 +59,7 @@ export function Opportunity() {
           </div>
           
           <div className="flex-1 flex flex-col gap-4 sm:gap-8">
-            <div className="backdrop-blur-lg bg-white/10 p-4 sm:p-8 rounded-xl border border-white/20">
+            <div className="backdrop-blur-lg bg-gray-500/30 p-4 sm:p-8 rounded-xl border border-white/30">
               <div className="space-y-4 sm:space-y-6">
                 <p className="text-base sm:text-lg text-white text-shadow text-justify">
                   Radix is supported by GIGABRAINS, with classic retailers memecoin hunters still to come. Reaching SUI MC is a <span className="font-bold text-emerald-300">x50</span>!
@@ -70,7 +70,7 @@ export function Opportunity() {
               </div>
             </div>
             
-            <div className="backdrop-blur-lg bg-white/10 p-4 rounded-xl border border-white/20">
+            <div className="backdrop-blur-lg bg-gray-500/30 p-4 rounded-xl border border-white/30">
               <img
                 src="https://i.ibb.co/vHwHNw7/graph2.png"
                 alt="Growth Graph"
