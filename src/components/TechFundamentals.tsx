@@ -111,7 +111,7 @@ export function TechFundamentals() {
                 className="text-emerald-300 hover:text-emerald-400 transition-colors"
               >
                 <ins>Asset-Oriented protocols</ins>
-              </a> over Direct Message Virtual Machines, mitigating multi-billion-dollar losses from <a
+              </a> over Direct Message Virtual Machines are a must, mitigating multi-billion-dollar losses from <a
                 href="https://rekt.news/"
                 target="_blank"
                 rel="noopener noreferrer"
