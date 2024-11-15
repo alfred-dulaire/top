@@ -183,6 +183,7 @@ export function Contact() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {communityLinks.map((link, index) => (
               <button
+                aria-label={`Open ${link.text}`}
                 key={index}
                 onClick={() => window.open(link.href, '_blank')}
                 className="flex items-center justify-center gap-2 backdrop-blur-lg bg-white/10 p-4 rounded-xl border border-white/20 hover:bg-white/20 transition-colors text-white group"
@@ -197,6 +198,7 @@ export function Contact() {
           <div id="pdf-actions" className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {pdfActions.map((action, index) => (
               <button
+                aria-label={`Open ${link.text}`}
                 key={index}
                 onClick={action.onClick}
                 className="flex items-center justify-center gap-2 backdrop-blur-lg bg-white/10 p-4 rounded-xl border border-white/20 hover:bg-white/20 transition-colors text-white group"
