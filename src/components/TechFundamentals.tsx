@@ -194,9 +194,9 @@ export function TechFundamentals() {
             </p>
           </div>
 
-          <div className="backdrop-blur-lg bg-gray-500/30 p-6 rounded-xl border border-white/30">
+         
             <RadixSummary />
-          </div>
+         
         </div>
       </div>
     </section>
