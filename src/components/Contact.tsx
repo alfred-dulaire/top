@@ -101,7 +101,7 @@ export function Contact() {
             </div>
           </div>
 
-          <div className="backdrop-blur-lg bg-white/10 p-4 sm:p-8 rounded-xl border border-white/20">
+          <div className="backdrop-blur-lg bg-gray-500/30 p-4 sm:p-8 rounded-xl border border-white/30">
              <div className="space-y-6 sm:space-y-8">
               <div>
                 <h4 className="text-base sm:text-lg font-semibold text-white mb-4">RADIX for Institutions and Fund Managers</h4>
@@ -112,7 +112,7 @@ export function Contact() {
                       href={partner.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center justify-center p-3 sm:p-4 backdrop-blur-sm bg-white/5 rounded-lg hover:bg-white/10 transition-colors group"
+                      className="flex items-center justify-center p-3 sm:p-4 backdrop-blur-sm bg-white/5 rounded-lg hover:bg-gray-500/30 transition-colors group"
                     >
                       <img
                         src={partner.logo}
@@ -133,7 +133,7 @@ export function Contact() {
                       href={partner.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center justify-center p-3 sm:p-4 backdrop-blur-sm bg-white/5 rounded-lg hover:bg-white/10 transition-colors group"
+                      className="flex items-center justify-center p-3 sm:p-4 backdrop-blur-sm bg-white/5 rounded-lg hover:bg-gray-500/30 transition-colors group"
                     >
                       <img
                         src={partner.logo}
@@ -154,7 +154,7 @@ export function Contact() {
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 backdrop-blur-lg bg-white/10 p-3 sm:p-4 rounded-xl border border-white/20 hover:bg-white/20 transition-colors text-white group"
+                className="flex items-center justify-center gap-2 backdrop-blur-lg bg-gray-500/30 p-3 sm:p-4 rounded-xl border border-white/30 hover:bg-white/20 transition-colors text-white group"
               >
                 {link.icon}
                 <span className="text-sm sm:text-base">{link.text}</span>
