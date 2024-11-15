@@ -88,35 +88,32 @@ const communityLinks = [
 const pdfActions = [
   {
     icon: <FileText className="w-5 h-5" />,
-    text: "Download as PDF",
+    text: "Download PDF",
     onClick: () => {
-      window.location.href = '/Radix DLT 6 slides pitch v2.pdf';
+      window.location.href = 'https://drive.google.com/uc?export=download&id=1qTvaDgTCxov_vQ0-Cx6dAYEqMMQSFYrR';
     }
   },
   {
     icon: <Share2 className="w-5 h-5" />,
     text: "Share PDF",
     onClick: () => {
-      const pdfUrl = '/Radix DLT 6 slides pitch v2.pdf';
-      fetch(pdfUrl)
-        .then(response => response.blob())
-        .then(blob => {
-          const file = new File([blob], 'Radix DLT 6 slides pitch v2.pdf', { type: 'application/pdf' });
-          const subject = encodeURIComponent('Radix DLT Pitch Deck');
-          const body = encodeURIComponent('Please find attached the Radix DLT pitch deck.');
-          
-          if (navigator.share && navigator.canShare({ files: [file] })) {
-            navigator.share({
-              files: [file],
-              title: 'Radix DLT Pitch Deck',
-              text: 'Please find attached the Radix DLT pitch deck.'
-            }).catch(() => {
-              window.location.href = `mailto:?subject=${subject}&body=${body}`;
-            });
-          } else {
-            window.location.href = `mailto:?subject=${subject}&body=${body}`;
-          }
+      const pdfUrl = 'https://drive.google.com/uc?export=download&id=1qTvaDgTCxov_vQ0-Cx6dAYEqMMQSFYrR';
+      const subject = encodeURIComponent('Radix DLT Pitch Deck');
+      const body = encodeURIComponent(
+        `Please find the Radix DLT pitch deck available for download here: ${pdfUrl}`
+      );
+
+      if (navigator.share) {
+        navigator.share({
+          title: 'Radix DLT Pitch Deck',
+          text: `Check out the Radix DLT pitch deck. You can download it here: ${pdfUrl}`,
+          url: pdfUrl
+        }).catch(() => {
+          window.location.href = `mailto:?subject=${subject}&body=${body}`;
         });
+      } else {
+        window.location.href = `mailto:?subject=${subject}&body=${body}`;
+      }
     }
   }
 ];
