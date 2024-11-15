@@ -200,8 +200,8 @@ export function TechFundamentals() {
                 rel="noopener noreferrer" 
                 className="text-emerald-300 hover:text-emerald-400 transition-colors"
               >
-                <ins>Check this great example</ins>
-              </a> of a yield-bearing bond with real-world assets, featuring easy configuration, compliance controls, and token creation/distribution using RADIX.
+                <ins>Check this example</ins>
+              </a> of a yield-bearing bond with real-world assets, featuring easy   configuration, compliance controls, and token creation/distribution using RADIX.
             </p>
           </div>
 
